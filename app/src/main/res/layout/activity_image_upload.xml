@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageUploadActivity">
+
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/fab"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="50dp"
+       android:layout_marginBottom="50dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@color/purple_500"
+       android:backgroundTint="@color/purple_500"
+       android:src="@drawable/ic_menu_camera"
+        android:tint="#fff"
+       />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabUpload"
+        android:layout_toLeftOf="@+id/fab"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+      android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@color/purple_500"
+       android:backgroundTint="@color/purple_500"
+       android:src="@drawable/upload_icon"
+        android:tint="#fff"
+       />
+
+</RelativeLayout>
